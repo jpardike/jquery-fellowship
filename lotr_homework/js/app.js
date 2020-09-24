@@ -141,12 +141,20 @@ const makeBaddies = () => {
 // Chapter 5
 // ============
 const makeBuddies = () => {
-
+  console.log('Make buddies');
   // 1. create an aside tag and append it to middle-earth below mordor
-
+  const $newAside = $('<aside />');
+  $('#middle-earth').append($newAside);
   // 2. display an unordered list of buddies in the aside
-
-  // 3. give each of the buddies a class of "buddy"
+  const $newUl = $('<ul />');
+  $newAside.append($newUl);
+  for (let i = 0; i < buddies.length; i++) {
+    const $newLi = $('<li />');
+    // 3. give each of the buddies a class of "buddy"
+    $newLi.addClass('buddy');
+    $newLi.text(buddies[i]);
+    $newUl.append($newLi);
+  }
 
 };
 
