@@ -179,9 +179,9 @@ const leaveTheShire = () => {
 // Chapter 7
 // ============
 const beautifulStranger = () => {
-
+  console.log('King of men');
   // 1. change the buddy 'Strider' textnode to "Aragorn"
-
+  $('.buddy:contains("Strider")').text('Aragorn');
   // hint: You can get a list of elements by tag name, such as 'aside'
 
 };
