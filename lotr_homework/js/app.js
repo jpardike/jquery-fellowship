@@ -165,9 +165,9 @@ const makeBuddies = () => {
 // Chapter 6
 // ============
 const leaveTheShire = () => {
-
+  console.log('Left the shire');
   // 1. grab the hobbits (the ul in which they reside) and move them to Rivendell
-
+  $('#Rivendell').append($('#The-Shire>ul'));
   // hint: the hobbits ul is a childNode of The-Shire-- there is way to get a list of childNodes
 
 };
